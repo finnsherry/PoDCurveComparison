@@ -26,9 +26,9 @@ def DNVGL(a):
     return 1.0 - 1.0 / (1.0 + (a / 37.15) ** 0.954)
 
 
-def Connor(a):
+def Campbell(a):
     """
-    PoD curve as determined by Connor et al. [1].
+    PoD curve as determined by Campbell et al. [1].
 
     [1] Probability of Detection Study for Visual Inspection of Steel Bridges:
         Volume 2-Full Project Report (2019). L.E. Campbell, L.R. Snyder,

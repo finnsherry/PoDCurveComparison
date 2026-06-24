@@ -17,9 +17,9 @@ The column `length_mm` gives the length of the crack in millimetres; `length_pix
 ## Contents of notebooks
 - `pod_models.py`: Basic functions to define, fit, and test the PoD models.
 - `data_statistics.ipynb`: Exploration of the data statistics. Used to generate Figs. 2, 4, 5, 12 in [[1]](#1).
-- `general_pod.ipynb`: Fit the crack length PoD curve model on our CV method's inspection capability, determine confidence bounds, and compare to the PoD curves from the DNVGL recommendation [[2]](#2) and determined by Connor et al. [[3]](#3). Used to generate Fig. 6 in [[1]](#1).
-- `resolution_effect.ipynb`: Fit the crack length and resolution curve models, using the parametric and the binning approach, on our CV method's inspection capability and compare to the PoD curves from the DNVGL recommendation [[2]](#2) and determined by Connor et al. [[3]](#3). Used to generate Figs. 13, 14, 15 in [[1]](#1).
-- `MC_sim.ipynb`: Apply comparison framework Alg. 1 from [[1]](#1) to the PoD curves fitted in `general_pod.ipynb` and `resolution_effect.ipynb` and the PoD curves from the DNVGL recommendation [[2]](#2) and determined by Connor et al. [[3]](#3). Used to generate Fig. 9, Figs. A.18-A.29, Tabs. 1-3.
+- `general_pod.ipynb`: Fit the crack length PoD curve model on our CV method's inspection capability, determine confidence bounds, and compare to the PoD curves from the DNVGL recommendation [[2]](#2) and determined by Campbell et al. [[3]](#3). Used to generate Fig. 6 in [[1]](#1).
+- `resolution_effect.ipynb`: Fit the crack length and resolution curve models, using the parametric and the binning approach, on our CV method's inspection capability and compare to the PoD curves from the DNVGL recommendation [[2]](#2) and determined by Campbell et al. [[3]](#3). Used to generate Figs. 13, 14, 15 in [[1]](#1).
+- `MC_sim.ipynb`: Apply comparison framework Alg. 1 from [[1]](#1) to the PoD curves fitted in `general_pod.ipynb` and `resolution_effect.ipynb` and the PoD curves from the DNVGL recommendation [[2]](#2) and determined by Campbell et al. [[3]](#3). Used to generate Fig. 9, Figs. A.18-A.29, Tabs. 1-3.
 
 # Cite
 If you use this code in your own work, please cite our paper:
@@ -50,7 +50,7 @@ We compare to the PoD curve in the DNVGL recommendation:
 }
 ```
 
-We also compare to the PoD curve measured by Connor et al:
+We also compare to the PoD curve measured by Campbell et al:
 
 <a id="3">[3]</a> Campbell, L.E., Snyder, L.R., Whitehead, J.M., Connor, R.J., Lloyd, J.B. "Probability of Detection Study for Visual Inspection of Steel Bridges: Volume 2—Full Project Report." Indiana. Dept. of Transportation (2019). https://doi.org/10.5703/1288284317104
 ```
