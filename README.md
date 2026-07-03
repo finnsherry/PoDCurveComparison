@@ -19,7 +19,7 @@ The column `length_mm` gives the length of the crack in millimetres; `length_pix
 - `data_statistics.ipynb`: Exploration of the data statistics. Used to generate Figs. 2, 4, 5, 12 in [[1]](#1).
 - `general_pod.ipynb`: Fit the crack length PoD curve model on our CV method's inspection capability, determine confidence bounds, and compare to the PoD curves from the DNVGL recommendation [[2]](#2) and determined by Campbell et al. [[3]](#3). Used to generate Fig. 6 in [[1]](#1).
 - `resolution_effect.ipynb`: Fit the crack length and resolution curve models, using the parametric and the binning approach, on our CV method's inspection capability and compare to the PoD curves from the DNVGL recommendation [[2]](#2) and determined by Campbell et al. [[3]](#3). Used to generate Figs. 13, 14, 15 in [[1]](#1).
-- `MC_sim.ipynb`: Apply comparison framework Alg. 1 from [[1]](#1) to the PoD curves fitted in `general_pod.ipynb` and `resolution_effect.ipynb` and the PoD curves from the DNVGL recommendation [[2]](#2) and determined by Campbell et al. [[3]](#3). Used to generate Fig. 9, Figs. A.18-A.29, Tabs. 1-3.
+- `MC_sim.ipynb`: Apply comparison framework Alg. 1 from [[1]](#1) to the PoD curves fitted in `general_pod.ipynb` and `resolution_effect.ipynb` and the PoD curves from the DNVGL recommendation [[2]](#2) and determined by Campbell et al. [[3]](#3). Used to generate Figs. 7, 8, 9, 16, 17, A.18-A.29, Tabs. 1-3.
 
 # Cite
 If you use this code in your own work, please cite our paper:
@@ -52,13 +52,13 @@ We compare to the PoD curve in the DNVGL recommendation:
 
 We also compare to the PoD curve measured by Campbell et al:
 
-<a id="3">[3]</a> Campbell, L.E., Snyder, L.R., Whitehead, J.M., Connor, R.J., Lloyd, J.B. "Probability of Detection Study for Visual Inspection of Steel Bridges: Volume 2—Full Project Report." Indiana. Dept. of Transportation (2019). https://doi.org/10.5703/1288284317104
+<a id="3">[3]</a> Campbell, L.E., Snyder, L.R., Whitehead, J.M., Connor, R.J., Lloyd, J.B. "Probability of Detection Study for Visual Inspection of Steel Bridges: Volume 2—Full Project Report." Indiana Dept. of Transportation (2019). https://doi.org/10.5703/1288284317104
 ```
 @techreport{Connor2019ProbabilityReport,
   title         = {Probability of {D}etection {S}tudy for {V}isual {I}nspection of {S}teel {B}ridges: {V}olume 2—{F}ull {P}roject {R}eport},
-  author        = {Campbell, L.E. and Snyder, L.R. and Whitehead, J.M. and Connor, R.J. and Lloyd, J.B.},
+  author        = {Campbell, Leslie E. and Snyder, Luke R. and Whitehead, Julie M. and Connor, Robert J. and Lloyd, Jason B.},
   year          = {2019},
-  institution   = {Indiana. Dept. of Transportation},
+  institution   = {Indiana Dept. of Transportation},
   doi           = {10.5703/1288284317104}
 }
 ```
