@@ -24,7 +24,7 @@ The column `length_mm` gives the length of the crack in millimetres; `length_pix
 # Cite
 If you use this code in your own work, please cite our paper:
 
-<a id="1">[1]</a> Kompanets, A., Sherry, F.M., Duits, R., Leonetti, D., Snijder, H.H. "A Statistical Approach for Evaluation of Automated Visual Crack Detection Using Probability of Detection." arXiv preprint (2026). https://doi.org/10.48550/arXiv.XXXX.YYYYY
+<a id="1">[1]</a> Kompanets, A., Sherry, F.M., Duits, R., Leonetti, D., Snijder, H.H. "A Statistical Approach for Evaluation of Automated Visual Crack Detection Using Probability of Detection." arXiv preprint (2026). https://doi.org/10.48550/arXiv.2608.17726
 ```
 @article{Kompanets2026StatisticalDetection,
   title       = {A Statistical Approach for Evaluation of Automated Visual Crack Detection Using Probability of Detection},
@@ -32,7 +32,7 @@ If you use this code in your own work, please cite our paper:
   journal     = {arXiv preprint},
   year        = {2026},
   pages       = {1--40},
-  doi         = {10.48550/arXiv.XXXX.YYYYY},
+  doi         = {10.48550/arXiv.2608.17726},
 }
 ```
 
