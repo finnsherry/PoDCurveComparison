@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/1279255636.svg)](https://doi.org/10.5281/zenodo.21771170)
 # About
 Code and data accompanying "A Statistical Approach for Evaluation of Automated Visual Crack Detection Using Probability of Detection" [[1]](#1).
 
