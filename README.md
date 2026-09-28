@@ -22,6 +22,14 @@ The column `length_mm` gives the length of the crack in millimetres; `length_pix
 - `resolution_effect.ipynb`: Fit the crack length and resolution curve models, using the parametric and the binning approach, on our CV method's inspection capability and compare to the PoD curves from the DNVGL recommendation [[2]](#2) and determined by Campbell et al. [[3]](#3). Used to generate Figs. 13, 14, 15 in [[1]](#1).
 - `MC_sim.ipynb`: Apply comparison framework Alg. 1 from [[1]](#1) to the PoD curves fitted in `general_pod.ipynb` and `resolution_effect.ipynb` and the PoD curves from the DNVGL recommendation [[2]](#2) and determined by Campbell et al. [[3]](#3). Used to generate Figs. 7, 8, 9, 16, 17, A.18-A.29, Tabs. 1-3.
 
+## Reproducing
+The experimental results in [[1]](#1) were achieved using:
+- `python 3.14.4`
+- `numpy 2.5.2`
+- `pandas 3.0.6`
+- `scikit-learn 1.9.0`
+- `scipy 1.18.0`
+
 # Cite
 If you use this code in your own work, please cite our paper:
 

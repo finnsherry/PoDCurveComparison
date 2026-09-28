@@ -58,7 +58,7 @@ def χ_sq_p(df, s):
 
 
 def fit_model(X, Z):
-    logistic_regression = LogisticRegression(penalty=None)
+    logistic_regression = LogisticRegression(C=np.inf)
     fitted_model = logistic_regression.fit(X, Z)
     θ_0_MLE, Θ_MLE = fitted_model.intercept_[0], fitted_model.coef_[0]
     return θ_0_MLE, Θ_MLE
