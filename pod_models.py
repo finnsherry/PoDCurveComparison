@@ -1,6 +1,7 @@
 import numpy as np
-from scipy.stats import chi2
+from scipy.stats import chi2, lognorm
 from sklearn.linear_model import LogisticRegression
+from functools import partial
 
 
 def sigmoid(x):
@@ -73,6 +74,17 @@ def minimum_missed_cracks(results):
     return min(stats["missed_crack_count"] for stats in results.values())
 
 
+def KL_estimate(samples, density):
+    N = len(samples)
+    x = np.sort(samples)
+    r = np.minimum(np.abs(x - np.roll(x, -1)), np.abs(x - np.roll(x, +1))) + np.finfo(np.float64).eps 
+    q = density(x)
+    p_hat = 1 / (
+        2 * (N - 1) * r
+    ) / np.sqrt(np.pi)
+    return np.mean(np.log(p_hat / q))
+
+
 def MC_simulation(
     inspection_methods,
     prior_mean,
@@ -130,14 +142,11 @@ def MC_simulation(
     results["generated_cracks"] = cracks
 
     return results
+    
 
-
-def metric_KL(s_1, scale_1, s_2, scale_2):
-    return (
-        np.log(s_2 / s_1)
-        + (s_1**2 + np.log(scale_1 / scale_2) ** 2) / (2 * s_2**2)
-        - 0.5
-    )
+def metric_KL(samples, s, scale):
+    density = partial(lognorm.pdf, s=s, scale=scale)
+    return KL_estimate(samples, density)
 
 
 def metric_C(missed_crack_length, total_crack_length):
